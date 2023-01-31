@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: 'Barlow', sans-serif;
+    color: hsl(0, 0%, 100%);
+    background-color: black;
+}
+
+.container {
+    padding: 2rem 1rem;
+}
+
+.description {
+    padding: 3rem 0rem;
+}
+
+.header-list {
+    display: flex;
+    list-style-type: none
+}
+
+.header-link {
+    text-decoration: none;
+    font-size: 13px;
+    color: hsl(0, 0%, 100%);
+    padding: 16px 35px;
+    border-radius: 30px;
+}
+
+.header-link:hover {
+    background-color: hotpink;
+    color: #f1f1f1;
+    transition: all 0.2s ease-in-out;
+}
+
+.tempimg:hover {
+    opacity: 0.8;
+    border: 5px solid orange;
+
+}
+
+.see-more {
+    padding: 12px 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+}
+
+.see-more:hover {
+    background-color: hotpink;
+    transition: all 0.3s ease-in-out;
+    color: #f1f1f1;
+}
+
+.heade-link:hover {
+    background-color: inherit;
+    border: 2px solid hotpink;
+    color: #f1f1f1;
+    transition: all 0.2s ease-in-out;
+}
+
+.tempimg {
+    height: 200px;
+    border-radius: 15px;
+    transition: all 0.1s ease-in-out;
+}
+
+.template {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 50%;
+    gap: 10px;
+}
+
+article {
+    padding: 0rem 2rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    /* height: 80vh; */
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #0c0c0c;
+    height: 280px;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Heebo', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-link {
+    text-decoration: none;
+    color: white;
+    background-color: hotpink;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-size: 15px;
+
+}
+
+.head-link:hover {
+    background-color: inherit;
+    border: 2px solid hotpink;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.heade-link {
+    text-decoration: none;
+    font-size: 13px;
+    color: hsl(0, 0%, 100%);
+    padding: 16px 35px;
+    border-radius: 30px;
+}
+
+.dropdown {
+    position: relative;
+    background-image: url(icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: right 15px top 10px;
+}
+
+.dropdown:hover {
+    transition: all 0.3s ease-in-out;
+    background-image: url(icon-arrow-up.svg );
+}
+
+.dropdown-items {
+    display: none;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: white;
+    width: 300px;
+    color: black;
+}
+
+.fontawesomes {
+    color: white;
+    padding: 10px;
+    width: 40px;
+    /* border: 2px solid white; */
+    background-color: rgb(160, 0, 80);
+    border-radius: 20px;
+}
+
+.fontawesomes:hover {
+    border: 2px solid  rgb(160, 0, 80);
+    color: rgb(160, 0, 80);
+    background-color: inherit;
+}
+
+.dropdown-items-t {
+    display: none;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: black;
+    width: 300px;
+    color: white;
+}
+
+.foot-lists {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.dropdown-text {
+    display: flex;
+    /* justify-content: space-between; */
+    font-weight: bold;
+    gap: 10px;
+}
+
+.dropdown:hover .dropdown-items-t {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 2.3rem;
+}
+
+.dropdown:hover .dropdown-items {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 2.3rem;
+}
+
+.box-link {
+    padding: 5px 17px;
+    background-color: gray;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.icons-s {
+    padding: 5px;
+    background-color: gray;
+    text-align: center;
+    color: white;
+    border-radius: 100%;
+}
+
+.icons-s:hover {
+    background-color: inherit;
+    border: 1px solid gray;
+    color: gray;
+}
+
+.manage {
+    width: 328px;
+    padding: 3px 8px 31px 9px;
+    height: 35px;
+    border-radius: 30px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    background-color: #363636;
+    padding: 2rem 1rem;
+    /* height: fit-content; */
+    color: white;
+    border-radius: 20px;
+}
+
+.box-link:hover {
+    background-color: #4c4b4b;
+    transition: all 0.3s ease-in-out;
+    color: #f1f1f1;
+}
+
+.justify {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    height: fit-content;
+}

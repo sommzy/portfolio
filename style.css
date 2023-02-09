@@ -145,6 +145,7 @@ nav {
     background-image: url(icon-arrow-down.svg);
     background-repeat: no-repeat;
     background-position: right 15px top 10px;
+    cursor: pointer;
 }
 
 .dropdown:hover {
@@ -171,7 +172,7 @@ nav {
 }
 
 .fontawesomes:hover {
-    border: 2px solid  rgb(160, 0, 80);
+    border: 2px solid rgb(160, 0, 80);
     color: rgb(160, 0, 80);
     background-color: inherit;
 }
@@ -266,4 +267,112 @@ section {
 header {
     width: 100%;
     height: fit-content;
+}
+
+.profile-name {
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.p {
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+.br {
+    display: none;
+}
+
+.brn {
+    display: block;
+}
+
+.media-link {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .header-list {
+        display: none;
+    }
+
+    .box-link {
+        display: none;
+    }
+
+    .brn {
+        display: none;
+    }
+
+    .dropdown {
+        background-image: none;
+    }
+
+    .dropdown:hover {
+        background-image: none;
+    }
+
+    .dropdown-items {
+        height: fit-content;
+        gap: 10px;
+        color: #0c0c0c;
+    }
+
+    .br {
+        display: block;
+    }
+
+    .header-list {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 1rem 1rem;
+        width: 100%;
+        background-color: #1a1a1a;
+    }
+
+    footer {
+        background-image: url(bg-header-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: black;
+    }
+
+    .p {
+        opacity: 1;
+        line-height: 1.7;
+    }
+
+    .media-link:hover {
+        background-color: #1a1a1a;
+        color: #f1f1f1;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .media-link {
+        display: block;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        border-radius: 30px;
+        background-color: #363636;
+    }
+
+    article {
+        flex-direction: column;
+    }
+
+    .head-link {
+        display: none;
+    }
+
+    .profile-name {
+        font-size: 3rem;
+    }
+
+    .justify {
+        flex-direction: column-reverse;
+    }
 }
